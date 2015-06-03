@@ -9,12 +9,8 @@ import java.util.List;
 @Component
 public class MessagingImpl implements Messaging.Iface {
 
-//    private static final Logger log = Logger.getLogger(MessagingImpl.class);
-
     @Override
     public List<Message> fetchMessages(UserCredentials credentials) throws TException {
-
-//        log.debug(credentials);
 
         List<Message> messages = new ArrayList<>();
         if (credentials.getToken().equals("demo")) {
@@ -29,13 +25,11 @@ public class MessagingImpl implements Messaging.Iface {
 
     @Override
     public boolean postMessage(NewMessage message) throws TException {
-//        log.debug(message);
         return false;
     }
 
     @Override
     public void ping(UserCredentials credentials) throws TException {
-//        log.debug(credentials);
     }
 
 }
