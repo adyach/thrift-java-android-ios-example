@@ -64,8 +64,11 @@
                 <version>0.1.11</version>
                 <executions>
                     <execution>
-                        <id>demo-sources</id>
+                        <id>thrift-sources</id>
                         <phase>generate-sources</phase>
+                        <configuration>
+                            <thriftSourceRoot>../thrift</thriftSourceRoot>
+                        </configuration>
                         <goals>
                             <goal>compile</goal>
                         </goals>
