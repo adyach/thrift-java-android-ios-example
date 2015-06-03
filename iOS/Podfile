@@ -1,0 +1,5 @@
+platform :ios, '7.0'
+
+target 'ThriftExample' do
+pod 'thrift', :inhibit_warnings => true
+end
